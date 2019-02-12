@@ -1,0 +1,32 @@
+[debug] [2019-02-12T10:50:36.901Z] ----------------------------------------------------------------------
+[debug] [2019-02-12T10:50:36.907Z] Command:       /Users/seanryanchan/.nvm/versions/node/v8.2.1/bin/node /Users/seanryanchan/.nvm/versions/node/v8.2.1/bin/firebase serve
+[debug] [2019-02-12T10:50:36.908Z] CLI Version:   4.2.0
+[debug] [2019-02-12T10:50:36.908Z] Platform:      darwin
+[debug] [2019-02-12T10:50:36.908Z] Node Version:  v8.2.1
+[debug] [2019-02-12T10:50:36.909Z] Time:          Tue Feb 12 2019 18:50:36 GMT+0800 (PST)
+[debug] [2019-02-12T10:50:36.910Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-12T10:50:36.965Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-12T10:50:36.965Z] > authorizing via signed-in user
+[debug] [2019-02-12T10:50:36.970Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/helloworld-77c1c  
+ 
+[debug] [2019-02-12T10:50:40.987Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-12T10:50:40.990Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/helloworld-77c1c  
+ 
+[debug] [2019-02-12T10:50:44.260Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/seanryanchan/Documents/Websites/HelloFirebase'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-12T10:50:44.907Z] Fetching environment
+[debug] [2019-02-12T10:50:44.910Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/390481912517:getServerAppConfig  
+ 
+[debug] [2019-02-12T10:50:44.911Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/390481912517/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-12T10:50:46.718Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-12T10:50:46.719Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-12T10:50:48.557Z] <<< HTTP RESPONSE 200
+[info] i  hosting[helloworld-77c1c]: Serving hosting files from: public
+[info] ✔  hosting[helloworld-77c1c]: Local server: http://localhost:5000
+[debug] [2019-02-12T10:50:48.812Z] Parsing function triggers
+[info] ✔  functions: firstAsiaApp: http://localhost:5001/helloworld-77c1c/us-central1/firstAsiaApp
