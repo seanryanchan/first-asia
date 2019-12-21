@@ -115,10 +115,31 @@ cd /first-asia/functions/
 ```
 npm install
 ```
+
+### Firebase
+```
+npm install -g firebase-tools
+npm install -g firebase-admin@latest
+npm install -g firebase-functions@latest
+```
+
 ## Running the Project
 ```
 cd /first-asia/functions/
+npm install
+firebase login:ci
 ```
+copy the token
+
 ```
+cd /first-asia/
+firebase serve --token <token>
+
+```
+
+```
+cd /first-asia/functions/
+npm install
+firebase emulators:start
 node index.js
 ```
