@@ -54,3 +54,71 @@ resetting mistakes made to one branch
 git reset
 git pull origin websiteA
 ```
+
+## Installing Dependencies
+### Git
+
+** to install git **
+
+```
+sudo apt-get update
+sudo apt-get install git
+
+```
+
+** to configure git **
+
+```
+git config --global user.name "Sean Chan"
+git config --global user.email "seanchan@email.com"
+```
+
+### NVM
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+```
+```
+export NVM_DIR=”$HOME/cid/.nvm”
+[ -s “$NVM_DIR/nvm.sh” ] && \. “$NVM_DIR/nvm.sh”
+[ -s "$NVM_DIR/bash_completion" ] && \.   "$NVM_DIR/bash_completion"
+```
+
+to test
+```
+command -v nvm
+```
+returns
+```
+nvm
+```
+
+### NodeJS
+```
+nvm ls-remote
+```
+choose 12.14.0
+```
+nvm install v12.14.0
+nvm use v12.14.0
+```
+verify by
+```
+node --version
+```
+
+### NPM
+npm should be installed as you install nodeJS
+### ExpressJS
+```
+cd /first-asia/functions/
+```
+```
+npm install
+```
+## Running the Project
+```
+cd /first-asia/functions/
+```
+```
+node index.js
+```
