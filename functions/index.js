@@ -3,7 +3,12 @@ const express = require('express');
 const firstAsiaApp = express();
 const path = require('path');
 
-console.log('expressApp running on', __dirname)
+// starting to think this does not work for free firebase.
+// it is all hosted on public... brother of functions dir
+// unless https://firebase.google.com/docs/hosting/full-config#direct_requests_to_a_function
+// currently not used.
+
+console.log('app is running on', __dirname)
 firstAsiaApp.set('view engine', 'pug')
 
 firstAsiaApp.get('/about', (request,response) => {
@@ -25,11 +30,17 @@ firstAsiaApp.get('/', (request,response) => {
 //   res.render( path.join(__dirname,'views','index'))
 // })
 
+firstAsiaApp.use('*', (req,res) => {
+  res.sendStatus(404);
+})
+
 firstAsiaApp.use(express.static(path.join(__dirname,'public')));
 
-firstAsiaApp.listen(3000, () => console.log(`Example app listening on port 3000!`))
+// firstAsiaApp.listen(3000, () => console.log(`Example app listening on port 3000!`))
 
 exports.firstAsiaApp = functions.https.onRequest(firstAsiaApp);
+
+
 
 // headers are 1920 x 300 (header bg)
 // contact info bg is 1920 x 751

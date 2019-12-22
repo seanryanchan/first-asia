@@ -1,0 +1,43 @@
+[debug] [2019-12-22T23:57:27.378Z] ----------------------------------------------------------------------
+[debug] [2019-12-22T23:57:27.381Z] Command:       /Users/srakyrex/.nvm/versions/node/v12.13.1/bin/node /Users/srakyrex/.nvm/versions/node/v12.13.1/bin/firebase serve
+[debug] [2019-12-22T23:57:27.381Z] CLI Version:   7.10.0
+[debug] [2019-12-22T23:57:27.381Z] Platform:      darwin
+[debug] [2019-12-22T23:57:27.381Z] Node Version:  v12.13.1
+[debug] [2019-12-22T23:57:27.382Z] Time:          Mon Dec 23 2019 00:57:27 GMT+0100 (Central European Standard Time)
+[debug] [2019-12-22T23:57:27.382Z] ----------------------------------------------------------------------
+[debug] [2019-12-22T23:57:27.382Z] 
+[debug] [2019-12-22T23:57:27.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-22T23:57:27.401Z] > authorizing via signed-in user
+[debug] [2019-12-22T23:57:27.401Z] [iam] checking project first-asia-manufacturing for permissions ["firebase.projects.get"]
+[debug] [2019-12-22T23:57:27.403Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-12-22T23:57:27.403Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-12-22T23:57:27.565Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-22T23:57:27.582Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/first-asia-manufacturing:testIamPermissions  
+
+[debug] [2019-12-22T23:57:28.536Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-22T23:57:28.537Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/first-asia-manufacturing  
+ 
+[debug] [2019-12-22T23:57:28.814Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/srakyrex/Documents/FreelanceProjects/first-asia'...
+[info] 
+[debug] [2019-12-22T23:57:28.820Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/first-asia-manufacturing/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-12-22T23:57:29.451Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/srakyrex/Documents/FreelanceProjects/first-asia/functions" for Cloud Functions...
+[debug] [2019-12-22T23:57:29.491Z] [worker-~diagnostic~-7f3d6e20-888a-4f74-a676-f320c0a85d62]: Assigning socketPath: /var/folders/04/23qvs3qj5vq8v3jjt03dq6_r0000gn/T/fire_emu_6164.sock
+[debug] [2019-12-22T23:57:29.492Z] [worker-~diagnostic~-7f3d6e20-888a-4f74-a676-f320c0a85d62]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-12-22T23:57:29.893Z] [runtime-status] [6164] Functions runtime initialized. {"cwd":"/Users/srakyrex/Documents/FreelanceProjects/first-asia/functions","node_version":"12.13.1"}
+[debug] [2019-12-22T23:57:29.895Z] [runtime-status] [6164] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-22T23:57:29.898Z] [runtime-status] [6164] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/srakyrex/Documents/FreelanceProjects/first-asia/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-22T23:57:29.901Z] [runtime-status] [6164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/srakyrex/Documents/FreelanceProjects/first-asia/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-22T23:57:29.902Z] [runtime-status] [6164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/srakyrex/Documents/FreelanceProjects/first-asia/functions/node_modules/firebase-functions/lib/index.js"}
+[info] >  app is running on /Users/srakyrex/Documents/FreelanceProjects/first-asia/functions
+[info] ✔  functions[firstAsiaApp]: http function initialized (http://localhost:5001/first-asia-manufacturing/us-central1/firstAsiaApp).
+[debug] [2019-12-22T23:57:30.352Z] [worker-~diagnostic~-7f3d6e20-888a-4f74-a676-f320c0a85d62]: exited
+[debug] [2019-12-22T23:57:30.353Z] [worker-~diagnostic~-7f3d6e20-888a-4f74-a676-f320c0a85d62]: FINISHED
