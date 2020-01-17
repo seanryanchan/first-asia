@@ -1,0 +1,26 @@
+.footer p {
+  color: red;
+}
+
+.green-gradient {
+  position:relative;
+  display:inline-block;
+}
+
+.green-gradient::after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: linear-gradient(-57.6deg, #f8f9fa4d, #00000063);
+}
+
+#about-us-caption {
+  right: 35.5%;
+  left: 9.4%;
+
+  /* if viewport is MacbookAir sized. */
+  bottom: -9.0em;
+  /*  */
+}

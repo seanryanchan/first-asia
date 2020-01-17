@@ -12,14 +12,14 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3 , h4 , h5, h6 {
 	color: #222121;
 	margin: 0;
 	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -690,7 +690,8 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	opacity: 0.7;
+	background: #000;
+	opacity: 0.25;
 }
 
 .hs-item .hs-text {
